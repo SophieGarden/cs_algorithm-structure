@@ -62,9 +62,9 @@ Explanation: The answer is "wke", with the length of 3.
 
                                  max_len = max(max_len, i-start_index+1)
                                  #print(i, char, start_index, i-start_index+1,max_len)
-                             return 0 if len(s) == 0 else max_len
+                             return max_len
 
                              '''
                              time complexity O(n)
-                             space complexity O(min(m, n))).  We need O(k) space for the sliding window, where k is the size of the Set. The size of the Set is upper bounded by the size of the string n and the size of the charset/alphabet m. 
+                             space complexity O(min(m, n))).  We need O(k) space for the sliding window, where k is the size of the Set. The size of the Set is upper bounded by the size of the string n and the size of the charset/alphabet m.
                              '''
